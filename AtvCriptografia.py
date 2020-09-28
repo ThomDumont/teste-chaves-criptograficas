@@ -35,7 +35,7 @@ def poker(chaves: list):
             if chunk.bin in ocorr.keys():
                 ocorr[chunk.bin] += 1
             else:
-                ocorr[chunk.bin] = 0
+                ocorr[chunk.bin] = 1
 
         f = [ocorr ** 2 for ocorr in ocorr.values()]
         x = (16 / 5000) * sum(f) - 5000
